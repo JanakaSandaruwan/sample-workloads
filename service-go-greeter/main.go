@@ -52,5 +52,6 @@ func greet(w http.ResponseWriter, r *http.Request) {
 	if name == "" {
 		name = "Stranger"
 	}
+	log.Println("Greet")
 	fmt.Fprintf(w, "Hello, %s!\n", name)
 }
